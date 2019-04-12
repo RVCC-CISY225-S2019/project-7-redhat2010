@@ -1,31 +1,104 @@
-# Project 6
-## Mobile First Navigation Using Flex and JS
+# Project 7
+## Add responsive web design for tablets and wide screens & Add styling for print
 
-The goal of this assignment is to add page navigation to your About Me page. To do this, your are going to merge code from the demo with your existing code. You will have to be careful that all links (including the links in the head tag) are there and work without error. You will also make sure that the merge is done without creating any code errors and without losing any content.
-
-Once the merge is complete, you will be checking your About Me page with real mobile devices. To do this, make sure that the Settings page in your repo is set to use your Master as the GH Pages. See the below as an example.
-
-![GH Pages](https://github.com/cynthiateeters/nav-demo/blob/master/readme-src/GitHubPagesMasterSource.png)
+**You are expected to thoroughly review the materials in Module Week 10 as well as Module Week 6. You must use our CSS formatting rules from the CISY 225 Style Guide when writing your CSS. You are also required to use Beautify inside of Brackets. I encourage you to beautify often as you write code for your HTML and CSS.**
 
 
-You are going to have to download and add the files from your Project 5 into this repo. Then you'll edit your index.html and styles.css to make the required changes.  
+**You Must Have a Perfect Project 6 Repo. Make all changes to P6 before starting this project. Your grade depends on this. If you need help, ask me for help.**
 
-1. Download and unzip this nav-demo repo.
-2. In this nav-demo repo, rename index.html to index-demo.html. Also I suggest you delete my photo image files as they are no good for your P6 and they take up a lot of room.
-2. Download and unzip your completed and _perfect_ Project 5 repo. Merge the two repos into one.
-3. Make sure that the old P5 README.md file does not overwrite the P6 README.md.
-4. Look carefully at index-demo.html and index-shell.html to figure out how you are going to merge the navigation code into your index.html.
-5. Once you have it planned out, cut-n-paste between files to make your About Me have navigation. 
-6. The CSS files for the navigation is contained in the file css/nav-style.css. Leave it there and link to it in the head tag. Below that link, have a link to your styles.css file.
-7. Validate and beautify. REPEATEDLY!
-8. Make sure you have the master branch as the source to the public GH Pages (see above). Note that somethines it takes a few moments to get GH Pages synced to your repo when you are making changes.
-9. Test the public link from two different mobile devices and do screen grabs.
-10. Add those screen grab pictures to the folder called readme-src in this repo.
-11. Edit this repo and add the images to the bottom of this page so that they display like the GH Pages image you see above.
+In this project you are using the design document as shown in 
 
-**You are expected to do the Week 9 reading as preparation for this assignment. Also you must use our CSS formatting rules from the CISY 225 Style Guide.**
+[Adobe XD RWD of About Me](https://xd.adobe.com/spec/a5db66b4-3086-4f9b-4c62-b0ecce091949-d3ea/ "Adobe XD RWD of ABout Me")
 
-**You Must Have a Perfect Project 5 Repo. Make all changes to P5 before starting this project. Your grade depends on this. If you need help, ask me for help.**
+You will be adding media queries and CSS grids to get your About Me page looking similar to the design images.
+
+0. Use Project 6 as your starter code.
+1. Make room at the bottom of your styles.css file to add new styling.
+2. Add the following shell code.
+
+````
+/*  grids */
+
+main {
+	display: grid;
+}
+
+/* hero content */
+
+.content {
+	display: grid;
+}
+
+/* about content */
+
+.about-content {
+	display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+	display: grid;
+}
+
+/*  article */
+
+article {
+	display: grid;
+}
+
+/* form container */
+.form-container {
+	display: grid;
+}
+
+/* footer */
+
+footer {
+	display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+
+	/*	article */
+
+	/*	form */
 
 
-![GH Pages](https://github.com/RVCC-CISY225-S2019/project-6-redhat2010/blob/master/readme-src/iphone-5-screenshot.PNG)
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+
+	/*	article */
+
+	/*	form */
+
+}
+````
+
+3. Edit your HTML to match classes, id needed to match the above shell.
+4. Edit the CSS to add layout for tablets using the media query.
+5. Test your layout using Developer Tools.
+6. Edit the CSS to add layout for tablets using the media query.
+7. Add an external stylesheet for print using the [How to Create Printer-friendly Pages with CSS](https://www.sitepoint.com/css-printer-friendly-pages/ "How to Create Printer-friendly Pages with CSS")
+8. Validate, validate, validate and beautify, beautify, beautify before submitting.
