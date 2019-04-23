@@ -93,6 +93,10 @@ label {
     grid-area: pic3;
 }
 
+.form-container {
+	display: grid;
+}
+
 picture {
     grid-area: picture;
 }
@@ -114,8 +118,13 @@ article {
 
 /* form container */
 .form-container {
-
+	grid-template-columns: 1fr 48ch 1fr;
     grid-area: form-container;
+}
+
+.form-container h1,
+form {
+	grid-column: 2/3;
 }
 
 /* footer */
@@ -161,7 +170,7 @@ footer {
 main {
     margin: 5rem;
     display: grid;
-    grid-area: "main";
+    grid-area: main;
     grid-gap: 1em;
     grid-template-areas:
         "hero"
@@ -243,7 +252,7 @@ grid-template-columns: 1fr;
 
     main {
         display: grid;
-        grid-area: "main";
+        grid-area: main;
         grid-gap: 1em;
         grid-template-columns: 1fr 25rem 1fr;
         grid-template-areas:
